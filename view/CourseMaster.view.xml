@@ -1,4 +1,4 @@
-<mvc:View
+<mvc:View controllerName="view.CourseMaster"
   height="100%"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">

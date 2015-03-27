@@ -23,7 +23,7 @@ sap.ui.core.UIComponent.extend("sap.ui.demo.splitapp.Component", {
 					subroutes: [
       					{
        				pattern : "Courses/{viewId}",
-       				name : "Course",
+       				name : "course-detail",
       			    view : "CourseDetail",
       				viewPath : "view",
        				viewLevel : 2,
