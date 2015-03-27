@@ -11,16 +11,27 @@ sap.ui.core.UIComponent.extend("sap.ui.demo.splitapp.Component", {
 				clearTarget : false,
 				transition: "slide"
 			},
-			routes : [
+			routes :[
 				{
 					pattern : "",
 					name : "home-master",
-					view : "HomeMaster",
+					view : "CourseMaster",
 					viewPath : "view",
 					viewLevel : 1,
-					targetAggregation : "masterPages"
+					targetAggregation : "masterPages",
+
+					subroutes: [
+      					{
+       				pattern : "Courses/{viewId}",
+       				name : "Course",
+      			    view : "CourseDetail",
+      				viewPath : "view",
+       				viewLevel : 2,
+       				targetAggregation : "detailPages"
+      					}
+      				]
 				}
-			]
+			] 
 		}
 	},
 
@@ -69,6 +80,8 @@ sap.ui.core.UIComponent.extend("sap.ui.demo.splitapp.Component", {
 		});
 
 		// set navigation model
+		var i18nModel = new sap.ui.model.resource.ResourceModel({ bundleUrl : "i18n/messageBundle.properties" });
+	    oView.setModel(i18nModel, "i18n");
 		// load the global data model
 		var oJSONDataModel = new sap.ui.model.json.JSONModel("model/data.json");
 		oView.setModel(oJSONDataModel);

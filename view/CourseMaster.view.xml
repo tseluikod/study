@@ -1,0 +1,14 @@
+<mvc:View
+  height="100%"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="Логотип">
+    <content>
+      <VBox>
+         <List items="{/courseList}" >
+    <StandardListItem title="{name}" description="{startDate}" type="Active" press = "coursesItemPress"/>
+ </List>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

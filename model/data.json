@@ -1,2 +1,71 @@
 {
+	"courseList" : [
+	{
+		"id":"121" ,
+		"name":"Math" ,
+		"duration": "2 weeks",
+		"level":"easy" ,
+		"exercise":"sqroot, logarithms" ,
+		"teacher": "Petrov Max",
+		"product":"Matlab" ,
+		"startDate": "23 Dec, 2014" ,
+		"endDate":"22 Jan, 2015" ,
+		"practice": [
+		{
+			"number":"1" ,
+			"name": "start",
+			"shortTxt":"start learning matlab" ,
+			"duration": "1 day"
+		},
+		{
+			"number":"2" ,
+			"name": "basic functions",
+			"shortTxt":"continue learning matlab" ,
+			"duration": "2 days"
+		}
+		]
+
+	},
+	{
+		"id":"221" ,
+		"name":"BW" ,
+		"duration": "5 days",
+		"level":"hard" ,
+		"exercise": "bw, bex, abap",
+		"teacher": "Rich Alex",
+		"product": "SAP BW",
+		"startDate": "14 Feb, 2015",
+		"endDate": "19 Feb, 2015",
+		"practice": [
+		{
+			"number": "1.1" ,
+			"name": "to begin with",
+			"shortTxt":"start" ,
+			"duration":"1 day" 
+		},
+		{
+			"number": "1.2" ,
+			"name": "mastering bw",
+			"shortTxt":"how 2 become a guru" ,
+			"duration":"4 days" 
+		}
+		]
+
+	}
+	],
+
+
+	"myCourses" : [
+	{
+		"courseId" : "221",
+		"practice" : [
+		{
+		"number": "1.1",
+		"percentComplete": "70"
+
+		}
+
+		]
+	}
+	]
 }
